@@ -4,8 +4,6 @@ services:
     image: msujith/paytmmovies:latest
     ports:
       - "81:80"
-    volumes:
-      - "movvol"
     deploy:
       replicas: 3
 
@@ -13,8 +11,6 @@ services:
     image: msujith/paytmtrain:latest
     ports:
       - "82:80"
-    volumes:
-      - "travol"
     deploy:
       replicas: 3
 
@@ -22,8 +18,6 @@ services:
     image: msujith/paytmdth:latest
     ports:
       - "83:80"
-    volumes:
-      - "dthvol"
     deploy:
       replicas: 3
 
