@@ -31,7 +31,5 @@ services:
     image: msujith/paytmrecharge:latest
     ports:
       - "84:80"
-    volumes:
-      - "recvol"
     deploy:
       replicas: 3
